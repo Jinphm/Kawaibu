@@ -1,0 +1,75 @@
+<!-- {"title":"Lộ trình 4 giai đoạn và KPI","section":3,"cls":"s-road","notes":"Bốn giai đoạn: hoàn thiện MVP từ 10/2026, thí điểm miễn phí từ 02/2027, thương mại hóa từ 06/2027 với hòa vốn vận hành từ 8/2027, mở rộng từ 12/2027 lên 20 đến 25 tòa với MRR 160 đến 200 triệu đồng. Mỗi giai đoạn có điều kiện chuyển và thời gian gia hạn tối đa."} -->
+<style>
+.s-road .body { display:flex; flex-direction:column; gap: 14px; }
+.s-road .phases { display:grid; grid-template-columns: repeat(4, 1fr); gap: 14px; position:relative; }
+.s-road .ph { padding: 18px 20px 16px; display:flex; flex-direction:column; gap: 8px; }
+.s-road .ph .top { display:flex; justify-content:space-between; align-items:center; }
+.s-road .ph .gd { font-size: 14px; font-weight:800; letter-spacing:.1em; color: var(--orange); }
+.s-road .ph .dur { font-size: 13px; font-weight:700; color: var(--muted); }
+.s-road .ph .h3 { font-size: 20px; }
+.s-road .ph .time { font-size: 14px; color: var(--muted); margin-top: -6px; }
+.s-road .ph .focus { font-size: 14.5px; line-height:1.45; color: var(--text); padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.s-road .ph dl { display:flex; flex-direction:column; gap: 5px; }
+.s-road .ph dt { font-size: 13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color: var(--muted); }
+.s-road .ph dd { font-size: 14.5px; line-height:1.4; color:#fff; }
+.s-road .ph dd.soft { color: var(--text); }
+.s-road .ph.hot { background: linear-gradient(160deg, rgba(255,115,0,.18), rgba(255,115,0,.05)); border-color: var(--orange-line); }
+.s-road .kpi { flex:1; padding: 14px 26px 10px; display:grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
+.s-road .kpi .kh { grid-column: 1 / -1; display:flex; align-items:baseline; gap: 14px; margin-bottom: 6px; }
+.s-road .kpi .kh .h3 { font-size: 18px; text-transform: uppercase; letter-spacing:.02em; }
+.s-road .kpi .kh span { font-size: 14px; color: var(--muted); }
+.s-road .kr { display:grid; grid-template-columns: 1fr auto; gap: 14px; align-items:baseline; padding: 5px 0; border-top: 1px solid var(--line); font-size: 15px; }
+.s-road .kr .v { font-weight: 800; color: var(--orange); text-align:right; white-space:nowrap; }
+.s-road .kr .v small { font-weight: 500; color: var(--muted); font-size: 13px; margin-left: 6px; }
+</style>
+<div class="head">
+  <h1 class="h1">Lộ trình 4 giai đoạn</h1>
+  <p class="lead">Mỗi giai đoạn có <b>kết quả cần đạt, điều kiện chuyển giai đoạn</b> và thời gian gia hạn tối đa.</p>
+</div>
+<div class="body">
+  <div class="phases">
+    <div class="ph card">
+      <div class="top"><span class="gd">GĐ0</span><span class="dur">4 tháng · gia hạn tối đa 2</span></div>
+      <h3 class="h3">Hoàn thiện MVP</h3><div class="time">10/2026 - 01/2027</div>
+      <p class="focus">Hoàn thiện sản phẩm thực tế, sửa lỗi khi chạy thử; hoàn thiện UX/UI</p>
+      <dl><dt>Kết quả</dt><dd>MVP ổn định; ký 2 - 3 MOU thí điểm</dd><dt>Điều kiện chuyển</dt><dd class="soft">Đạt chỉ tiêu kỹ thuật; có từ 2 MOU</dd></dl>
+    </div>
+    <div class="ph card">
+      <div class="top"><span class="gd">GĐ1</span><span class="dur">4 tháng · gia hạn tối đa 2</span></div>
+      <h3 class="h3">Thí điểm</h3><div class="time">02/2027 - 05/2027</div>
+      <p class="focus">2 - 3 tòa thí điểm miễn phí; Sổ Minh Bạch chạy dữ liệu thật, thu thập data</p>
+      <dl><dt>Kết quả</dt><dd>Xác định bên trả tiền và mức giá</dd><dt>Điều kiện chuyển</dt><dd class="soft">Từ 2 tòa cam kết trả phí bằng văn bản</dd></dl>
+    </div>
+    <div class="ph card hot">
+      <div class="top"><span class="gd">GĐ2</span><span class="dur">6 tháng · gia hạn tối đa 3</span></div>
+      <h3 class="h3">Thương mại hóa</h3><div class="time">06/2027 - 11/2027</div>
+      <p class="focus">Chuyển đổi trả phí; thu thập ý kiến người dùng, hoàn thiện và phát triển app</p>
+      <dl><dt>Kết quả</dt><dd>6 - 8 tòa trả phí; MRR 45 - 65 triệu; hòa vốn vận hành từ 8/2027</dd><dt>Điều kiện chuyển</dt><dd class="soft">Từ 6 tòa trả phí, không mất tòa nào; doanh thu bù được chi phí vận hành</dd></dl>
+    </div>
+    <div class="ph card">
+      <div class="top"><span class="gd">GĐ3</span><span class="dur">12 tháng · gia hạn tối đa 6</span></div>
+      <h3 class="h3">Mở rộng quy mô</h3><div class="time">12/2027 - 11/2028</div>
+      <p class="focus">Nhân rộng quy mô, sửa lỗi khi tăng quy mô; 4 validator (điểm xác thực)</p>
+      <dl><dt>Kết quả</dt><dd>20 - 25 tòa; MRR 160 - 200 triệu; bắt đầu trả lương founder</dd><dt>Điều kiện chuyển</dt><dd class="soft">Từ 20 tòa trả phí; tỷ lệ ngừng hợp đồng dưới 10%/năm</dd></dl>
+    </div>
+  </div>
+  <div class="kpi card-strong">
+    <div class="kh"><h3 class="h3">KPI và chỉ số tác động</h3><span>mục tiêu và thời điểm theo hồ sơ dự án</span></div>
+    <div>
+      <div class="kr"><span>Tòa đang quản lý (GĐ3)</span><span class="v">20 - 25 tòa</span></div>
+      <div class="kr"><span>Cư dân được phục vụ</span><span class="v">20.000 - 30.000<small>tháng 24</small></span></div>
+      <div class="kr"><span>Tỷ lệ rời bỏ hằng năm</span><span class="v">&lt; 10%</span></div>
+      <div class="kr"><span>Chi phí hạ tầng / doanh thu</span><span class="v">&lt; 20%</span></div>
+      <div class="kr"><span>Onboarding mỗi tòa</span><span class="v">≤ 5 ngày</span></div>
+      <div class="kr"><span>Quỹ bảo trì được minh bạch hóa</span><span class="v">280 - 400 tỷ đ<small>tháng 24</small></span></div>
+    </div>
+    <div>
+      <div class="kr"><span>Thời gian xử lý phản ánh</span><span class="v">giảm ≥ 30%<small>tháng 9</small> · ≥ 50%<small>tháng 24</small></span></div>
+      <div class="kr"><span>Hộ dân sử dụng ứng dụng</span><span class="v">≥ 40%<small>tháng 9</small> · ≥ 85%<small>tháng 12</small></span></div>
+      <div class="kr"><span>Cư dân hài lòng (chấm 8 - 10)</span><span class="v">≥ 85%<small>tháng 9</small></span></div>
+      <div class="kr"><span>Khoản chi công khai, neo blockchain</span><span class="v">100%<small>từ thí điểm</small></span></div>
+      <div class="kr"><span>Tòa đang phục vụ (tháng 24)</span><span class="v">15 - 20 tòa</span></div>
+      <div class="kr"><span>Doanh thu định kỳ tháng (GĐ3)</span><span class="v">160 - 200 triệu</span></div>
+    </div>
+  </div>
+</div>

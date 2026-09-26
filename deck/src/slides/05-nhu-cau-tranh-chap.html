@@ -1,0 +1,40 @@
+<!-- {"title":"Nhu cầu và tranh chấp Làm Tổ giải quyết","section":1,"cls":"s-need","notes":"Mô hình B2B2C: Ban quản trị là người quyết định mua, Ban quản lý là người dùng hằng ngày, cư dân là người thụ hưởng. Cư dân không ngại đóng phí, họ ngại tranh chấp. Làm Tổ xử lý từng điểm nóng: quỹ bảo trì, tăng phí, phản ánh bị bỏ quên, thiếu bằng chứng khi hòa giải và thiếu kênh lên tiếng."} -->
+<style>
+.s-need .body { display:grid; grid-template-columns: 470px 1fr; gap: 40px; }
+.s-need .actors { display:flex; flex-direction:column; gap: 14px; }
+.s-need .actor { padding: 22px 24px; display:grid; grid-template-columns: 52px 1fr; column-gap: 18px; flex:1; align-content:center; }
+.s-need .actor .role { font-size: 13px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color: var(--orange); margin-bottom: 4px; }
+.s-need .actor .h3 { margin-bottom: 6px; }
+.s-need .actor p { font-size: 16px; line-height:1.45; }
+.s-need .flow { text-align:center; font-size: 13px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color: var(--muted); }
+.s-need table { width:100%; border-collapse: collapse; }
+.s-need th { text-align:left; font-size: 13px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color: var(--muted); padding: 0 0 14px; }
+.s-need th:last-child { color: var(--orange); }
+.s-need td { vertical-align: top; padding: 13px 0; border-top:1px solid var(--line); font-size: 16px; line-height:1.45; }
+.s-need td.pain { width: 38%; padding-right: 26px; color:#fff; font-weight:600; font-size: 17px; }
+.s-need td.pain small { display:block; font-weight:400; font-size: 14px; color: var(--muted); margin-top: 2px; }
+.s-need td.arrow { width: 44px; color: var(--orange); }
+.s-need td.arrow svg { width: 22px; height: 22px; margin-top: 2px; }
+.s-need td.fix b { color:#fff; }
+</style>
+<div class="head">
+  <h1 class="h1">Nhu cầu và tranh chấp Làm Tổ giải quyết</h1>
+  <p class="lead">Cư dân không ngại đóng phí, <b>cư dân ngại tranh chấp</b>: họ cần kiểm chứng, không chỉ đọc báo cáo.</p>
+</div>
+<div class="body">
+  <div class="actors">
+    <div class="actor card-strong"><span class="ico">{{i:seal-check}}</span><div><div class="role">Người quyết định mua</div><h3 class="h3">Ban quản trị</h3><p>Cần minh bạch không chỉ để phục vụ cư dân mà còn để tự bảo vệ khi xảy ra tranh chấp.</p></div></div>
+    <div class="actor card"><span class="ico">{{i:user-gear}}</span><div><div class="role">Người dùng hằng ngày</div><h3 class="h3">Ban quản lý</h3><p>Cần công cụ báo cáo Ban quản trị và cập nhật, thông báo, phản hồi cư dân.</p></div></div>
+    <div class="actor card"><span class="ico">{{i:users-three}}</span><div><div class="role">Người thụ hưởng</div><h3 class="h3">Cư dân</h3><p>Cần kiểm chứng từng khoản tiền đã đóng và một kênh chính thức để lên tiếng.</p></div></div>
+  </div>
+  <table>
+    <thead><tr><th>Tranh chấp, bức xúc</th><th></th><th>Làm Tổ giải quyết</th></tr></thead>
+    <tbody>
+      <tr><td class="pain">Tranh chấp quỹ bảo trì<small>khoảng 36% số vụ tranh chấp chung cư</small></td><td class="arrow">{{i:arrow-right:bold}}</td><td class="fix"><b>Sổ Minh Bạch</b> công khai từng khoản chi kèm chứng từ gốc; mỗi khoản neo mã băm lên blockchain, cư dân tự kiểm chứng.</td></tr>
+      <tr><td class="pain">Tăng phí, cắt dịch vụ mà không rõ tiền đi đâu<small>nghi ngờ Ban quản lý vận hành khai khống chi phí</small></td><td class="arrow">{{i:arrow-right:bold}}</td><td class="fix">Biết chính xác từng khoản chi vào việc gì, cho nhà thầu nào; <b>kênh khiếu nại chính thức</b> cho từng khoản.</td></tr>
+      <tr><td class="pain">Phản ánh bị bỏ quên, phải chờ giờ hành chính<small>báo hỏng phải gặp trực tiếp; phản ánh qua Zalo không ai theo dõi</small></td><td class="arrow">{{i:arrow-right:bold}}</td><td class="fix">Gửi phản ánh <b>24/7</b>; AI gợi ý nhóm sự cố, mức khẩn cấp, bộ phận phụ trách; lưu vết và đo thời gian xử lý.</td></tr>
+      <tr><td class="pain">Thiếu bằng chứng khi đối thoại, hòa giải<small>Ban quản trị bị nghi ngờ ngay cả khi làm đúng</small></td><td class="arrow">{{i:arrow-right:bold}}</td><td class="fix">Lịch sử thu chi <b>không thể sửa lén</b>: căn cứ khách quan cho Ban quản trị và UBND phường, xã (Quyết định 25/2026/QĐ-UBND).</td></tr>
+      <tr><td class="pain">Thiếu kênh để cư dân lên tiếng<small>không có nơi chính thức đánh giá chất lượng, phản đối khoản phí; chờ hội nghị mỗi năm một lần</small></td><td class="arrow">{{i:arrow-right:bold}}</td><td class="fix"><b>Chấm điểm</b> từng lần xử lý, <b>khiếu nại</b> từng khoản chi, thay cho đơn thư tập thể.</td></tr>
+    </tbody>
+  </table>
+</div>

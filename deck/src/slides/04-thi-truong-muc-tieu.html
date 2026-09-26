@@ -1,0 +1,52 @@
+<!-- {"title":"Thị trường mục tiêu và quy mô thị trường","section":1,"cls":"s-tam","notes":"Khách hàng mục tiêu là các tòa 300 đến 700 căn, dưới 10 năm tuổi, đã có Ban quản trị, không thuộc đại đô thị có app nội bộ như Vinhomes. Với giá 20.000 đồng mỗi căn mỗi tháng: TAM 96 đến 120 tỷ đồng, SAM 32,4 tỷ đồng, SOM 0,54 đến 5,4 tỷ đồng trong 3 năm đầu với 5 đến 50 tòa."} -->
+<style>
+.s-tam .criteria { display:grid; grid-template-columns: 1fr 1fr 1fr 1.05fr; gap: 0; }
+.s-tam .crit { padding: 4px 30px 4px 0; }
+.s-tam .crit + .crit { padding-left: 30px; border-left:1px solid var(--line); }
+.s-tam .crit .ico { margin-bottom: 16px; }
+.s-tam .crit .h3 { margin-bottom: 8px; }
+.s-tam .crit p { font-size: 16px; line-height: 1.45; }
+.s-tam .crit .gain { color: var(--orange); font-weight: 600; }
+.s-tam .excl { margin-left: 30px; padding: 22px 24px; border-left: none; }
+.s-tam .excl .label { margin-bottom: 10px; display:flex; align-items:center; gap:8px; color: #ffb27a; }
+.s-tam .excl .label svg { width:18px; height:18px; }
+.s-tam .excl p { font-size: 16px; line-height:1.45; }
+.s-tam .size-head { margin-top: 40px; margin-bottom: 14px; display:flex; align-items:baseline; gap: 16px; }
+.s-tam .size-head .h3 { text-transform: uppercase; letter-spacing: .02em; }
+.s-tam .nest { position:relative; height: 340px; border-radius: 24px; background: rgba(33,58,120,.32); border:1px solid var(--line-strong); }
+.s-tam .lvl { position:absolute; top:0; bottom:0; padding: 26px 30px; display:flex; flex-direction:column; justify-content:space-between; }
+.s-tam .lvl .k { font-size: 15px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.s-tam .lvl .k b { color:#fff; letter-spacing: .06em; }
+.s-tam .lvl .num { font-size: 50px; }
+.s-tam .lvl .num small { font-size: 22px; font-weight:700; margin-left: 6px; color: var(--muted); letter-spacing:0; }
+.s-tam .lvl p { font-size: 16px; line-height:1.45; }
+.s-tam .tam { left:0; width: 36%; }
+.s-tam .sam-box { position:absolute; top:18px; bottom:18px; right:18px; width: 63%; border-radius: 18px; background: rgba(33,58,120,.7); border:1px solid rgba(170,190,230,.3); }
+.s-tam .sam { left:0; width: 50%; }
+.s-tam .som-box { position:absolute; top:16px; bottom:16px; right:16px; width: 49%; border-radius: 14px; background: linear-gradient(160deg, #ff7a12, #e25f00); }
+.s-tam .som { left:0; right:0; }
+.s-tam .som .k, .s-tam .som .k b, .s-tam .som .num, .s-tam .som .num small, .s-tam .som p { color:#fff; }
+.s-tam .som p { color: rgba(255,255,255,.92); }
+</style>
+<div class="head">
+  <h1 class="h1">Thị trường mục tiêu và quy mô</h1>
+  <p class="lead">Mô hình <b>B2B2C</b>: chọn tòa có người mua tự nhiên, ngân sách hợp pháp, chưa bị app chủ đầu tư chiếm chỗ.</p>
+</div>
+<div class="body">
+  <div class="criteria">
+    <div class="crit"><span class="ico">{{i:buildings}}</span><h3 class="h3">300 - 700 căn/tòa hoặc cụm</h3><p class="gain">Doanh thu 6 - 14 triệu đồng/tháng</p></div>
+    <div class="crit"><span class="ico">{{i:calendar-check}}</span><h3 class="h3">Tuổi đời dưới 10 năm</h3><p>Chi phí nâng cấp hạ tầng thấp, thiết bị đã tương thích</p></div>
+    <div class="crit"><span class="ico">{{i:users-three}}</span><h3 class="h3">Đã thành lập Ban quản trị</h3><p>Có người mua tự nhiên và ngân sách hợp pháp để chi trả; thuê đơn vị vận hành chuyên nghiệp</p></div>
+    <div class="excl card-accent"><div class="label">{{i:prohibit}}Loại trừ</div><p><b>Đại đô thị đã có app nội bộ</b> (Vinhomes…): tránh cạnh tranh trực diện với app của chủ đầu tư.</p></div>
+  </div>
+  <div class="size-head"><h3 class="h3">Quy mô thị trường</h3><span class="tag soft">20.000đ/căn/tháng</span></div>
+  <div class="nest">
+    <div class="lvl tam"><div class="k"><b>TAM</b> · Nhu cầu tổng thị trường</div><div class="num">96 - 120<small>tỷ đ/năm</small></div><p>Toàn bộ căn hộ chung cư Hà Nội, khoảng 400 - 500 nghìn căn</p></div>
+    <div class="sam-box">
+      <div class="lvl sam"><div class="k"><b>SAM</b> · Thị trường mục tiêu</div><div class="num">32,4<small>tỷ đ/năm</small></div><p>Tòa 300 - 700 căn, dưới 10 năm: khoảng 300 tòa, 135.000 căn</p></div>
+      <div class="som-box">
+        <div class="lvl som"><div class="k"><b>SOM</b> · Có thể đạt được</div><div class="num">0,54 - 5,4<small>tỷ đ/năm</small></div><p>3 năm đầu (5 - 50 tòa): khoảng 2.250 - 22.500 căn</p></div>
+      </div>
+    </div>
+  </div>
+</div>

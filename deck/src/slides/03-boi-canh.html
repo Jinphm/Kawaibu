@@ -1,0 +1,63 @@
+<!-- {"title":"Bối cảnh và cơ hội thị trường","section":1,"cls":"s-ctx","notes":"Thị trường chung cư Hà Nội lớn và tăng nhanh. Nỗi đau minh bạch đã thành vấn đề cấp thành phố: 17% cụm, tòa chung cư thương mại có tranh chấp, khiếu kiện; 36% số vụ là về quỹ bảo trì; 52% chưa được bàn giao quỹ bảo trì. App hiện có tập trung ở đại đô thị và TP.HCM, nên phân khúc tầm trung Hà Nội còn khoảng trống."} -->
+<style>
+.s-ctx .body { display:flex; flex-direction:column; gap: 26px; }
+.s-ctx .strip { display:grid; grid-template-columns: repeat(4, 1fr); padding: 24px 0; border-top:1px solid var(--line-strong); border-bottom:1px solid var(--line); }
+.s-ctx .strip > div { padding: 0 30px; }
+.s-ctx .strip > div:first-child { padding-left: 0; }
+.s-ctx .strip > div + div { border-left:1px solid var(--line); }
+.s-ctx .strip .num { font-size: 52px; }
+.s-ctx .strip .num small { font-size: 20px; font-weight:700; color: var(--muted); margin-left: 6px; letter-spacing:0; }
+.s-ctx .strip p { margin-top: 10px; font-size: 16px; line-height:1.45; }
+.s-ctx .lower { flex:1; display:grid; grid-template-columns: 1fr 620px; gap: 24px; }
+.s-ctx .pain { padding: 28px 32px; display:flex; flex-direction:column; gap: 18px; }
+.s-ctx .stats { display:grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.s-ctx .stat { padding-right: 22px; }
+.s-ctx .stat + .stat { padding-left: 22px; border-left: 1px solid var(--line); }
+.s-ctx .stat .num { font-size: 58px; color: var(--orange); }
+.s-ctx .stat p { margin-top: 8px; font-size: 16px; line-height:1.45; }
+.s-ctx .stat small { display:block; margin-top: 4px; font-size: 13px; color: var(--muted); }
+.s-ctx .pain .foot { margin-top:auto; padding-top: 16px; border-top: 1px solid var(--line); font-size: 16px; line-height:1.5; }
+.s-ctx .gap { padding: 28px 32px; display:flex; flex-direction:column; gap: 14px; }
+.s-ctx .gap .t { font-size: 26px; line-height:1.22; font-weight:800; color:#fff; text-transform:uppercase; }
+.s-ctx .gap .t span { color: var(--orange); }
+.s-ctx .gap ul { list-style:none; display:flex; flex-direction:column; gap: 14px; margin-top: 6px; }
+.s-ctx .gap li { display:flex; gap: 12px; font-size: 17px; line-height:1.45; }
+.s-ctx .gap li svg { width: 18px; height: 18px; color: var(--orange); flex:none; margin-top: 3px; }
+.s-ctx .gap .grow { margin-top:auto; display:flex; align-items:center; gap: 16px; padding-top: 14px; border-top: 1px solid var(--orange-line); }
+.s-ctx .gap .grow .num { font-size: 40px; color: var(--orange); }
+.s-ctx .gap .grow p { font-size: 15px; }
+</style>
+<div class="head">
+  <h1 class="h1">Bối cảnh và cơ hội</h1>
+  <p class="lead">Thị trường chung cư lớn, tăng trưởng nhanh, chưa bị giới hạn bởi nhu cầu; nhưng <b>cư dân không có cách tự kiểm tra quỹ chung</b>.</p>
+</div>
+<div class="body">
+  <div class="strip">
+    <div><div class="num">1.363<small>tòa</small></div><p>chung cư tại Hà Nội; 745 - 919 tòa/khu thương mại đang vận hành</p></div>
+    <div><div class="num">30.900<small>căn</small></div><p>mở bán tại Hà Nội năm 2024, <b>gấp 3 lần</b> năm 2023</p></div>
+    <div><div class="num">36.000<small>căn</small></div><p>mở bán năm 2025, cao thứ hai trong lịch sử</p></div>
+    <div><div class="num">46.600<small>căn</small></div><p>dự kiến thêm trong giai đoạn 2026 - 2027</p></div>
+  </div>
+  <div class="lower">
+    <div class="pain card-strong">
+      <h3 class="h3">Nỗi đau minh bạch đã thành vấn đề cấp thành phố</h3>
+      <div class="stats">
+        <div class="stat"><div class="num">17%</div><p><b>129/745</b> cụm, tòa chung cư thương mại Hà Nội có tranh chấp, khiếu kiện<small>Thanh tra Chính phủ</small></p></div>
+        <div class="stat"><div class="num">36%</div><p>số vụ tranh chấp là về <b>quỹ bảo trì</b>, khoảng 6% số tòa<small>Bộ Xây dựng</small></p></div>
+        <div class="stat"><div class="num">52%</div><p>chung cư thương mại <b>chưa được bàn giao</b> quỹ bảo trì</p></div>
+      </div>
+      <p class="foot">Báo cáo thu - chi chỉ ra vài lần mỗi năm, không kèm chứng từ, không đối chiếu sao kê. Báo hỏng, đóng phí vẫn phải đến văn phòng trong giờ hành chính. Hà Nội phải ra quy định buộc xã/phường can thiệp.</p>
+    </div>
+    <div class="gap card-accent">
+      <div class="t">Phân khúc tầm trung Hà Nội: <span>thị trường còn khoảng trống</span></div>
+      <ul>
+        <li>{{i:map-pin-area}}<span>App nội bộ tập trung ở đại đô thị lớn; đối thủ mạnh nhất ở TP.HCM</span></li>
+        <li>{{i:user-focus}}<span>Giao diện phức tạp, không thân thiện với người lớn tuổi</span></li>
+        <li>{{i:robot}}<span>Chưa có AI thực chất; "minh bạch" chỉ dừng ở báo cáo tổng hợp</span></li>
+        <li>{{i:lock-key-open}}<span>Không có cơ chế chống sửa đổi hồi tố số liệu</span></li>
+      </ul>
+      <div class="grow"><div class="num">~15%</div><p>mỗi năm: tệp khách hàng mục tiêu tự mở rộng nhờ nguồn cung mới</p></div>
+    </div>
+  </div>
+</div>
+<div class="source">Nguồn: CBRE, Savills; Thanh tra Chính phủ; Bộ Xây dựng.</div>

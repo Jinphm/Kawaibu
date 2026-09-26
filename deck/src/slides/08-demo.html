@@ -1,0 +1,45 @@
+<!-- {"title":"Demo kỹ thuật","section":2,"cls":"s-demo","notes":"Bản demo chạy thật bốn bước: cư dân gửi phản ánh trên app, AI phân loại và gợi ý, ban quản lý duyệt trên dashboard, khoản chi lên Sổ Minh Bạch kèm chứng từ và mã băm neo blockchain. Quét QR để xem mã nguồn."} -->
+<style>
+.s-demo .body { display:flex; flex-direction:column; gap: 18px; }
+.s-demo .steps { flex:1; display:grid; grid-template-columns: .78fr 1.3fr 1.3fr .78fr 230px; gap: 18px; min-height:0; }
+.s-demo .st { display:flex; flex-direction:column; gap: 12px; min-height:0; }
+.s-demo .st .hd { display:flex; gap: 10px; align-items:flex-start; min-height: 60px; }
+.s-demo .st .n { flex:none; width: 30px; height: 30px; border-radius: 8px; background: var(--orange); color:#fff; font-weight:800; font-size: 15px; display:flex; align-items:center; justify-content:center; }
+.s-demo .st .h3 { font-size: 17px; line-height:1.25; }
+.s-demo .st .hd p { font-size: 13.5px; color: var(--muted); line-height:1.35; margin-top: 2px; }
+.s-demo .shot { flex:1; min-height:0; border-radius: 14px; background: #eef2fa; border: 1px solid var(--line-strong); padding: 8px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.s-demo .shot img { max-width:100%; max-height:100%; object-fit: contain; border-radius: 8px; display:block; }
+.s-demo .qr { padding: 18px; display:flex; flex-direction:column; gap: 12px; align-items:center; justify-content:center; text-align:center; }
+.s-demo .qr .code { width: 170px; height: 170px; background:#fff; border-radius: 12px; padding: 10px; display:flex; }
+.s-demo .qr .code img { width:100%; height:100%; object-fit:contain; image-rendering: pixelated; }
+.s-demo .qr p { font-size: 13.5px; line-height:1.4; color: var(--text); word-break: break-all; }
+.s-demo .qr .gh { display:flex; gap: 6px; align-items:center; justify-content:center; font-size: 13px; color: var(--muted); }
+.s-demo .qr .gh svg { width: 16px; height: 16px; }
+.s-demo .stack { display:grid; grid-template-columns: auto 1fr 1.5fr 1.1fr; gap: 14px; align-items:stretch; }
+.s-demo .hl { display:flex; align-items:center; gap: 10px; padding: 0 20px; border-radius: var(--r-md); background: var(--orange); color:#fff; font-weight:700; font-size: 16px; white-space:nowrap; }
+.s-demo .hl svg { width: 20px; height: 20px; }
+.s-demo .sk { display:flex; align-items:center; gap: 14px; padding: 14px 18px; }
+.s-demo .sk .ico { width: 40px; height: 40px; border-radius: 10px; }
+.s-demo .sk .ico svg { width: 22px; height: 22px; }
+.s-demo .sk .h3 { font-size: 16px; }
+.s-demo .sk p { font-size: 14.5px; color: var(--text); }
+</style>
+<div class="head">
+  <h1 class="h1">Demo kỹ thuật</h1>
+  <p class="lead">Bản demo chạy thật 4 bước, <b>từ phản ánh của cư dân đến khoản chi công khai</b> trên Sổ Minh Bạch.</p>
+</div>
+<div class="body">
+  <div class="steps">
+    <div class="st"><div class="hd"><span class="n">1</span><div><h3 class="h3">Cư dân gửi phản ánh</h3><p>Android/iOS, mô tả sự cố</p></div></div><div class="shot"><img src="assets/img/demo-1-tmp.png" alt="Màn hình app cư dân gửi phản ánh"></div></div>
+    <div class="st"><div class="hd"><span class="n">2</span><div><h3 class="h3">AI phân loại</h3><p>Gợi ý nhóm sự cố, mức khẩn, bộ phận xử lý</p></div></div><div class="shot"><img src="assets/img/demo-2-tmp.png" alt="Màn hình AI phân loại phản ánh"></div></div>
+    <div class="st"><div class="hd"><span class="n">3</span><div><h3 class="h3">Ban quản lý duyệt</h3><p>Dashboard quản lý, cập nhật tiến độ, tạo hồ sơ bảo trì</p></div></div><div class="shot"><img src="assets/img/demo-3-tmp.png" alt="Dashboard ban quản lý"></div></div>
+    <div class="st"><div class="hd"><span class="n">4</span><div><h3 class="h3">Sổ Minh Bạch</h3><p>Chứng từ, hash bằng chứng, neo blockchain</p></div></div><div class="shot"><img src="assets/img/demo-4-tmp.png" alt="Màn hình chi tiết khoản chi trên Sổ Minh Bạch"></div></div>
+    <div class="qr card-strong"><div class="label accent">Mã nguồn</div><div class="code"><img src="assets/img/qr-tmp.png" alt="Mã QR dẫn tới kho mã nguồn"></div><div class="gh">{{i:github-logo}}GitHub</div><p>github.com/nhjson/<br>Fenikong_LamTo</p></div>
+  </div>
+  <div class="stack">
+    <div class="hl">{{i:star-four:fill}}Minh bạch, truy vết, có thể kiểm chứng</div>
+    <div class="sk card"><span class="ico">{{i:device-mobile}}</span><div><h3 class="h3">Mobile App</h3><p>Flutter</p></div></div>
+    <div class="sk card"><span class="ico">{{i:database}}</span><div><h3 class="h3">Backend và Data</h3><p>Django REST, PostgreSQL, MinIO, Firebase</p></div></div>
+    <div class="sk card"><span class="ico">{{i:cube}}</span><div><h3 class="h3">Evidence Layer</h3><p>Solidity, Foundry</p></div></div>
+  </div>
+</div>

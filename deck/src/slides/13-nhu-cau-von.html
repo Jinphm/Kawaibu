@@ -1,0 +1,63 @@
+<!-- {"title":"Nhu cầu vốn và điểm hòa vốn","section":5,"cls":"s-cap","notes":"Tổng nhu cầu vốn cho 8 tháng đầu khoảng 200 triệu đồng, gồm giai đoạn hoàn thiện MVP và thí điểm miễn phí. Nguồn vốn từ vốn góp sáng lập, giải thưởng, kinh phí hỗ trợ cuộc thi và chương trình ươm tạo. Sau thí điểm, chi phí vận hành chỉ khoảng 25 đến 30 triệu đồng mỗi tháng, tương đương doanh thu 3 đến 4 tòa, nên hòa vốn vận hành từ 8/2027."} -->
+<style>
+.s-cap .body { display:grid; grid-template-columns: 1fr 560px; gap: 28px; }
+.s-cap .budget { padding: 22px 28px; display:flex; flex-direction:column; }
+.s-cap .budget .hd { display:flex; justify-content:space-between; align-items:baseline; margin-bottom: 10px; }
+.s-cap .budget .hd .h3 { font-size: 17px; text-transform: uppercase; letter-spacing:.04em; }
+.s-cap .budget .hd span { font-size: 13.5px; color: var(--muted); }
+.s-cap .it { display:grid; grid-template-columns: 330px 1fr 44px; gap: 14px; align-items:center; padding: 7px 0; border-top: 1px solid var(--line); flex:1; }
+.s-cap .it .nm { font-size: 15px; color:#fff; font-weight:600; line-height:1.3; }
+.s-cap .it .nm small { display:block; font-size: 13px; color: var(--muted); font-weight:400; margin-top: 1px; }
+.s-cap .it .tr { height: 12px; }
+.s-cap .it .tr i { display:block; height: 100%; border-radius: 6px; background: #4a6fd1; }
+.s-cap .it .v { text-align:right; font-weight:800; color:#fff; font-size: 16px; }
+.s-cap .it.tot { border-top: 1px solid var(--line-strong); }
+.s-cap .it.tot .nm { font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing:.04em; }
+.s-cap .it.tot .v { color: var(--orange); font-size: 20px; }
+.s-cap .right { display:flex; flex-direction:column; gap: 16px; }
+.s-cap .big { padding: 22px 26px; }
+.s-cap .big .num { font-size: 64px; color: var(--orange); }
+.s-cap .big .num small { font-size: 22px; color:#fff; margin-left: 8px; letter-spacing:0; }
+.s-cap .big p { margin-top: 6px; font-size: 15.5px; line-height:1.45; }
+.s-cap .tl { padding: 18px 26px; }
+.s-cap .tl .row { display:grid; grid-template-columns: 124px 1fr; gap: 14px; padding: 8px 0; border-top: 1px solid var(--line); align-items:baseline; }
+.s-cap .tl .row:first-of-type { border-top: none; }
+.s-cap .tl .d { font-weight:800; color:#fff; font-size: 15px; }
+.s-cap .tl .row.hot .d { color: var(--orange); }
+.s-cap .tl .t { font-size: 15px; line-height:1.4; }
+.s-cap .src { padding: 18px 26px; flex:1; }
+.s-cap .src ul { list-style:none; display:flex; flex-direction:column; gap: 8px; margin-top: 10px; }
+.s-cap .src li { display:flex; gap: 10px; font-size: 15px; line-height:1.4; }
+.s-cap .src li svg { width: 18px; height: 18px; color: var(--orange); flex:none; margin-top: 2px; }
+</style>
+<div class="head">
+  <h1 class="h1">Nhu cầu vốn và điểm hòa vốn</h1>
+  <p class="lead">Vốn chỉ cần cho <b>8 tháng đầu</b>, trước khi doanh thu thuê bao bù được chi phí vận hành.</p>
+</div>
+<div class="body">
+  <div class="budget card">
+    <div class="hd"><h3 class="h3">Dự toán 8 tháng đầu</h3><span>triệu đồng</span></div>
+    <div class="it"><div class="nm">Lập trình viên bán thời gian<small>1 người, 8 triệu/tháng, 6 tháng</small></div><div class="tr"><i style="width:100%"></i></div><div class="v">48</div></div>
+    <div class="it"><div class="nm">Máy chủ, nút blockchain, lưu trữ chứng từ<small>khoảng 4 triệu/tháng, 8 tháng</small></div><div class="tr"><i style="width:66.7%"></i></div><div class="v">32</div></div>
+    <div class="it"><div class="nm">Thiết bị thử nghiệm<small>quét biển số, nhận diện khuôn mặt</small></div><div class="tr"><i style="width:62.5%"></i></div><div class="v">30</div></div>
+    <div class="it"><div class="nm">Marketing, tiếp cận khách hàng<small>quảng cáo tìm kiếm, ấn phẩm, sự kiện tại tòa thí điểm</small></div><div class="tr"><i style="width:52.1%"></i></div><div class="v">25</div></div>
+    <div class="it"><div class="nm">Pháp lý<small>thành lập doanh nghiệp, MOU, hợp đồng, bảo vệ dữ liệu cá nhân, nhãn hiệu</small></div><div class="tr"><i style="width:41.7%"></i></div><div class="v">20</div></div>
+    <div class="it"><div class="nm">Dự phòng</div><div class="tr"><i style="width:31.3%"></i></div><div class="v">15</div></div>
+    <div class="it"><div class="nm">API AI, dịch vụ thông báo<small>khoảng 1,5 triệu/tháng, 8 tháng</small></div><div class="tr"><i style="width:25%"></i></div><div class="v">12</div></div>
+    <div class="it"><div class="nm">Đi lại, gặp gỡ khách hàng</div><div class="tr"><i style="width:25%"></i></div><div class="v">12</div></div>
+    <div class="it"><div class="nm">Tài khoản phát hành app, tên miền, chứng chỉ bảo mật</div><div class="tr"><i style="width:12.5%"></i></div><div class="v">6</div></div>
+    <div class="it tot"><div class="nm">Tổng</div><div></div><div class="v">200</div></div>
+  </div>
+  <div class="right">
+    <div class="big card-accent"><div class="num">25 - 30<small>triệu đ/tháng</small></div><p>chi phí vận hành sau thí điểm, <b>tương đương doanh thu 3 - 4 tòa trả phí</b>. Founder chưa nhận lương đến giai đoạn mở rộng.</p></div>
+    <div class="tl card">
+      <div class="row"><span class="d">10/26 - 01/27</span><span class="t">Hoàn thiện MVP</span></div>
+      <div class="row"><span class="d">02/27 - 05/27</span><span class="t">Thí điểm miễn phí 2 - 3 tòa</span></div>
+      <div class="row hot"><span class="d">08/2027</span><span class="t"><b>Hòa vốn vận hành</b></span></div>
+      <div class="row"><span class="d">12/2027</span><span class="t">Mở rộng, bắt đầu trả lương founder</span></div>
+    </div>
+    <div class="src card"><div class="label">Nguồn vốn dự kiến</div>
+      <ul><li>{{i:hand-coins}}<span>Vốn góp của thành viên sáng lập</span></li><li>{{i:trophy}}<span>Giải thưởng, kinh phí hỗ trợ từ các cuộc thi</span></li><li>{{i:plant}}<span>Chương trình ươm tạo khởi nghiệp</span></li></ul>
+    </div>
+  </div>
+</div>

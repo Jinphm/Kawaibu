@@ -1,0 +1,73 @@
+<!-- {"title":"Sản phẩm và giá trị mang lại","section":2,"cls":"s-prod","notes":"Làm Tổ gồm app cho cư dân và web quản trị cho ban quản lý. Sáu nhóm giá trị: AI hỗ trợ xử lý sự cố, Sổ Minh Bạch neo blockchain, thông báo, quét biển số xe, nhận diện khuôn mặt, xem và thanh toán hóa đơn. Ba chức năng đầu đã chạy trong bản demo, ba chức năng sau nằm trong lộ trình."} -->
+<style>
+.s-prod .body { display:flex; flex-direction:column; gap: 18px; }
+.s-prod .top { display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+.s-prod .statement { grid-column: span 1; padding: 20px 24px; display:flex; align-items:center; }
+.s-prod .statement p { font-size: 18px; line-height:1.45; color:#fff; font-weight:600; }
+.s-prod .statement p span { color: var(--orange); }
+.s-prod .entry { display:flex; align-items:center; gap: 14px; padding: 18px 22px; }
+.s-prod .entry .who .h3 { font-size: 19px; }
+.s-prod .entry .who p { font-size: 14px; color: var(--muted); line-height:1.35; }
+.s-prod .entry .to { color: var(--orange); display:flex; margin-left:auto; }
+.s-prod .entry .to svg { width: 20px; height: 20px; }
+.s-prod .entry .app { display:flex; gap: 10px; align-items:center; padding: 10px 12px; border-radius: var(--r-md); background: rgba(255,255,255,.06); border: 1px solid var(--line); }
+.s-prod .entry .app svg { width: 24px; height: 24px; color: var(--orange); flex:none; }
+.s-prod .entry .app .h3 { font-size: 16px; }
+.s-prod .entry .app p { font-size: 13px; color: var(--muted); }
+.s-prod .feats { flex:1; display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; gap: 18px; }
+.s-prod .feat { padding: 22px 24px; display:flex; flex-direction:column; gap: 10px; }
+.s-prod .feat .tp { display:flex; align-items:center; justify-content:space-between; gap: 10px; }
+.s-prod .feat .tp .l { display:flex; align-items:center; gap: 12px; }
+.s-prod .feat .h3 { font-size: 19px; }
+.s-prod .feat p { font-size: 16px; line-height:1.5; }
+.s-prod .feat .ico { width: 42px; height: 42px; border-radius: 10px; }
+.s-prod .feat .ico svg { width: 23px; height: 23px; }
+.s-prod .tag { height: 26px; font-size: 13px; padding: 0 10px; }
+</style>
+<div class="head">
+  <h1 class="h1">Sản phẩm và giá trị mang lại</h1>
+  <p class="lead">Ứng dụng di động cho cư dân và trang quản trị web cho ban quản lý. <b>Ba chức năng lõi đã chạy trong bản demo.</b></p>
+</div>
+<div class="body">
+  <div class="top">
+    <div class="statement card-accent"><p>Nền tảng quản lý chung cư ứng dụng <span>AI</span> và <span>blockchain</span>: cư dân và ban quản lý phối hợp minh bạch, nhanh chóng, có bằng chứng.</p></div>
+    <div class="entry card">
+      <span class="ico">{{i:users-three}}</span>
+      <div class="who"><h3 class="h3">Cư dân</h3><p>Gửi phản ánh, theo dõi tiến độ</p></div>
+      <span class="to">{{i:arrow-right:bold}}</span>
+      <div class="app">{{i:device-mobile}}<div><h3 class="h3">App cư dân</h3><p>Flutter Mobile App</p></div></div>
+    </div>
+    <div class="entry card">
+      <span class="ico">{{i:user-gear}}</span>
+      <div class="who"><h3 class="h3">Ban quản lý</h3><p>Tiếp nhận, phê duyệt, thu chi</p></div>
+      <span class="to">{{i:arrow-right:bold}}</span>
+      <div class="app">{{i:desktop}}<div><h3 class="h3">Web quản trị</h3><p>Cổng quản trị, Dashboard</p></div></div>
+    </div>
+  </div>
+  <div class="feats">
+    <div class="feat card-strong">
+      <div class="tp"><div class="l"><span class="ico">{{i:robot}}</span><h3 class="h3">Xử lý sự cố có AI hỗ trợ</h3></div><span class="tag soft">Demo</span></div>
+      <p>Gửi phản ánh 24/7, xác nhận tức thì. AI phân loại và gợi ý (nhóm, mức độ khẩn cấp, bộ phận, thời hạn, phát hiện phản ánh trùng); <b>con người vẫn quyết định cuối cùng</b>. Lưu vết, có thống kê: quy trình có trách nhiệm, đo lường được.</p>
+    </div>
+    <div class="feat card-strong">
+      <div class="tp"><div class="l"><span class="ico">{{i:book-open-text}}</span><h3 class="h3">Sổ Minh Bạch (neo blockchain)</h3></div><span class="tag soft">Demo</span></div>
+      <p>Biết chính xác từng khoản quỹ bảo trì chi vào việc gì, cho nhà thầu nào. Tải chứng từ gốc; <b>tự kiểm chứng qua mã băm neo blockchain</b>; kênh khiếu nại chính thức. Minh bạch cho cả ban quản lý.</p>
+    </div>
+    <div class="feat card-strong">
+      <div class="tp"><div class="l"><span class="ico">{{i:bell-ringing}}</span><h3 class="h3">Thông báo</h3></div><span class="tag soft">Demo</span></div>
+      <p>Đẩy thông báo đúng lúc: tiến độ sự cố, yêu cầu bổ sung, mục mới trên Sổ Minh Bạch; chạm để mở trực tiếp thông tin liên quan. Thông báo tòa nhà: cắt điện/nước, phun thuốc, bảo trì, họp cư dân.</p>
+    </div>
+    <div class="feat card">
+      <div class="tp"><div class="l"><span class="ico">{{i:car-profile}}</span><h3 class="h3">Quét biển số xe</h3></div><span class="tag ghost">Lộ trình</span></div>
+      <p>Ra vào không cần thẻ; đăng ký và đóng phí gửi xe theo tháng online; lịch sử ra vào hỗ trợ tranh chấp. Chống thất thoát doanh thu bãi xe, tự phân biệt xe cư dân, khách vãng lai.</p>
+    </div>
+    <div class="feat card">
+      <div class="tp"><div class="l"><span class="ico">{{i:scan-smiley}}</span><h3 class="h3">Nhận diện khuôn mặt</h3></div><span class="tag ghost">Lộ trình</span></div>
+      <p>Không cần mang thẻ, không lo mất hay bị sao chép; người lạ khó lên tầng nên an toàn hơn. Ban quản lý kiểm soát chặt mà không tăng bảo vệ, bỏ chi phí thẻ từ, nâng giá trị bất động sản.</p>
+    </div>
+    <div class="feat card">
+      <div class="tp"><div class="l"><span class="ico">{{i:receipt}}</span><h3 class="h3">Xem và thanh toán hóa đơn</h3></div><span class="tag ghost">Lộ trình</span></div>
+      <p>Một nơi xem mọi hóa đơn (điện, nước, viễn thông, dịch vụ); chuyển khoản có lịch sử rõ ràng. Ban quản lý phân phối nhanh, nhắc hạn tự động: giảm nợ phí, giảm thu tiền mặt thủ công.</p>
+    </div>
+  </div>
+</div>

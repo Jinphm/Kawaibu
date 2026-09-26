@@ -1,0 +1,63 @@
+<!-- {"title":"Đơn vị kinh tế một tòa 500 căn","section":5,"cls":"s-unit","notes":"Một tòa 500 căn với giá 20.000 đồng mỗi căn mỗi tháng mang về 10 triệu đồng doanh thu. Trừ 3 triệu chi phí cố định và khoảng 1,08 triệu chi phí biến đổi, lợi nhuận ròng khoảng 5,92 triệu đồng mỗi tháng, tương đương 59,2%."} -->
+<style>
+.s-unit .body { display:grid; grid-template-columns: 700px 1fr; gap: 28px; }
+.s-unit table { width:100%; border-collapse: separate; border-spacing:0; }
+.s-unit th { text-align:left; font-size: 13px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color: var(--muted); padding: 0 14px 10px; }
+.s-unit th.r, .s-unit td.r { text-align:right; }
+.s-unit td { padding: 9px 14px; font-size: 16px; border-top: 1px solid var(--line); color: var(--text); font-variant-numeric: tabular-nums; }
+.s-unit td.ind { padding-left: 34px; font-size: 15px; color: var(--muted); }
+.s-unit tr.ind td { font-size: 15px; color: var(--muted); }
+.s-unit tr.tot td { font-weight: 800; color:#fff; background: rgba(33,58,120,.45); }
+.s-unit tr.grp td { font-weight: 700; color:#fff; }
+.s-unit tr.net td { font-weight: 800; color:#fff; background: var(--orange); font-size: 18px; border-top: none; }
+.s-unit tr.net td:first-child { border-radius: 10px 0 0 10px; }
+.s-unit tr.net td:last-child { border-radius: 0 10px 10px 0; }
+.s-unit .chart { padding: 22px 26px 18px; display:flex; flex-direction:column; }
+.s-unit .chart .h3 { font-size: 17px; text-transform: uppercase; letter-spacing: .04em; }
+.s-unit .plot { position:relative; flex:1; margin-top: 20px; display:grid; grid-template-columns: repeat(6, 1fr); gap: 16px; align-items:end; border-bottom: 1px solid var(--line-strong); }
+.s-unit .bar-col { position:relative; height: 100%; }
+.s-unit .bar { position:absolute; left: 0; right: 0; border-radius: 6px; }
+.s-unit .bar.rev { background: #4a6fd1; }
+.s-unit .bar.cost { background: #8fa3cc; opacity: .75; }
+.s-unit .bar.net { background: var(--orange); }
+.s-unit .val { position:absolute; left:0; right:0; text-align:center; font-size: 15px; font-weight: 800; color:#fff; }
+.s-unit .xl { display:grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-top: 10px; }
+.s-unit .xl span { text-align:center; font-size: 13.5px; color: var(--muted); line-height:1.3; }
+.s-unit .note { margin-top: 14px; font-size: 13.5px; line-height:1.5; color: var(--muted); padding-top: 12px; border-top: 1px solid var(--line); }
+.s-unit .note b { color: var(--text); }
+</style>
+<div class="head">
+  <h1 class="h1">Đơn vị kinh tế một tòa 500 căn</h1>
+  <p class="lead">Thuê bao <b>20.000đ/căn/tháng</b> do Ban quản trị chi trả; tòa 500 căn đạt lợi nhuận ròng <b>59,2%</b>.</p>
+</div>
+<div class="body">
+  <table>
+    <thead><tr><th>Khoản mục (một tháng)</th><th class="r">Giá trị (đ)</th><th class="r">% doanh thu</th></tr></thead>
+    <tbody>
+      <tr class="ind"><td>Số lượng căn hộ (1 tòa)</td><td class="r">500 căn</td><td class="r"></td></tr>
+      <tr class="ind"><td>Đơn giá / căn / tháng</td><td class="r">20.000</td><td class="r"></td></tr>
+      <tr class="tot"><td>Doanh thu tháng</td><td class="r">10.000.000</td><td class="r">100%</td></tr>
+      <tr class="grp"><td>(−) Chi phí cố định</td><td class="r">3.000.000</td><td class="r">30,0%</td></tr>
+      <tr><td class="ind">Hạ tầng cloud + node Besu</td><td class="r">1.800.000</td><td class="r">18,0%</td></tr>
+      <tr><td class="ind">Công cụ, AI nền, kế toán</td><td class="r">1.200.000</td><td class="r">12,0%</td></tr>
+      <tr class="grp"><td>(−) Chi phí biến đổi</td><td class="r">1.083.333</td><td class="r">10,8%</td></tr>
+      <tr><td class="ind">Vận hành 1tr/tòa</td><td class="r">1.000.000</td><td class="r">10,0%</td></tr>
+      <tr><td class="ind">CAC 2tr ÷ 36 tháng</td><td class="r">55.556</td><td class="r">0,6%</td></tr>
+      <tr><td class="ind">Onboarding 1tr ÷ 36 tháng</td><td class="r">27.778</td><td class="r">0,3%</td></tr>
+      <tr class="net"><td>Lợi nhuận ròng</td><td class="r">5.916.667</td><td class="r">59,2%</td></tr>
+    </tbody>
+  </table>
+  <div class="chart card">
+    <h3 class="h3">Doanh thu đến lợi nhuận ròng <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:500">(triệu đ/tháng)</span></h3>
+    <div class="plot" data-bleed>
+      <div class="bar-col"><div class="bar rev" style="bottom:0;height:88%"></div><div class="val" style="bottom:calc(88% + 6px)">10,0</div></div>
+      <div class="bar-col"><div class="bar cost" style="bottom:72.16%;height:15.84%"></div><div class="val" style="bottom:calc(88% + 6px)">−1,8</div></div>
+      <div class="bar-col"><div class="bar cost" style="bottom:61.6%;height:10.56%"></div><div class="val" style="bottom:calc(72.16% + 6px)">−1,2</div></div>
+      <div class="bar-col"><div class="bar cost" style="bottom:52.8%;height:8.8%"></div><div class="val" style="bottom:calc(61.6% + 6px)">−1,0</div></div>
+      <div class="bar-col"><div class="bar cost" style="bottom:52.1%;height:0.7%;min-height:3px"></div><div class="val" style="bottom:calc(52.8% + 6px)">−0,08</div></div>
+      <div class="bar-col"><div class="bar net" style="bottom:0;height:52.1%"></div><div class="val" style="bottom:calc(52.1% + 6px)">5,92</div></div>
+    </div>
+    <div class="xl"><span>Doanh thu</span><span>Cloud + Besu</span><span>Công cụ, AI</span><span>Vận hành/tòa</span><span>CAC, Onboarding</span><span>Lợi nhuận ròng</span></div>
+    <p class="note"><b>Giả định:</b> 500 căn/tòa; chi phí cố định (cloud, công cụ/AI) lấy mức GĐ2 chia đều cho 5 tòa; vận hành 1tr/tòa/tháng; CAC 2tr và onboarding 1tr khấu hao đều 36 tháng thay vì ghi một lần.</p>
+  </div>
+</div>

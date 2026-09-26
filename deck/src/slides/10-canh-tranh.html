@@ -1,0 +1,49 @@
+<!-- {"title":"Bức tranh cạnh tranh","section":4,"cls":"s-comp","notes":"So với CyHome, PiHome, HomeID, Building Care và Landsoft: chưa đối thủ nào triển khai AI phân loại và xử lý yêu cầu cư dân thực chất, minh bạch mới dừng ở báo cáo tổng hợp. ANPR và Face ID đã phổ biến, không còn là khác biệt. Làm Tổ định giá 20.000 đồng mỗi căn, ở mức trung bình của thị trường."} -->
+<style>
+.s-comp .body { display:flex; flex-direction:column; gap: 18px; }
+.s-comp table { width:100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; }
+.s-comp th, .s-comp td { padding: 14px 12px; font-size: 15.5px; line-height:1.35; text-align:left; vertical-align: middle; border-bottom: 1px solid var(--line); }
+.s-comp th { font-size: 14px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#fff; padding-top: 12px; padding-bottom: 12px; background: rgba(33,58,120,.55); }
+.s-comp th:first-child { border-top-left-radius: 12px; color: var(--muted); }
+.s-comp th:last-child { border-top-right-radius: 12px; }
+.s-comp td:first-child { font-weight:700; color:#fff; width: 190px; }
+.s-comp col.c0 { width: 180px; }
+.s-comp col.lt { width: 250px; }
+.s-comp .lt { background: rgba(255,115,0,.10); }
+.s-comp th.lt { background: var(--orange); color:#fff; }
+.s-comp td.lt { color:#fff; font-weight:600; border-left: 1px solid var(--orange-line); border-right: 1px solid var(--orange-line); }
+.s-comp tr:last-child td.lt { border-bottom: 1px solid var(--orange-line); }
+.s-comp .y, .s-comp .n { display:inline-flex; vertical-align: -3px; margin-right: 4px; }
+.s-comp .y svg, .s-comp .n svg { width: 17px; height: 17px; }
+.s-comp .y { color: #4fd18b; }
+.s-comp .n { color: #ff6b6b; }
+.s-comp .calls { display:grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 14px; }
+.s-comp .call { padding: 18px 22px; }
+.s-comp .calls { flex:1; }
+.s-comp .call .label { margin-bottom: 6px; }
+.s-comp .call p { font-size: 15px; line-height:1.45; }
+</style>
+<div class="head">
+  <h1 class="h1">Bức tranh cạnh tranh</h1>
+  <p class="lead">Chưa đối thủ nào có <b>AI xử lý yêu cầu thực chất</b> và <b>sổ thu chi chống sửa đổi</b>; Làm Tổ lấp đúng hai khoảng trống đó.</p>
+</div>
+<div class="body">
+  <table>
+    <colgroup><col class="c0"><col class="lt"><col><col><col><col><col></colgroup>
+    <thead><tr><th>Tiêu chí</th><th class="lt">Làm Tổ</th><th>CyHome</th><th>PiHome</th><th>HomeID</th><th>Building Care</th><th>Landsoft</th></tr></thead>
+    <tbody>
+      <tr><td>Giá tham chiếu</td><td class="lt">20.000đ/căn/tháng</td><td>~10.000đ/căn/tháng</td><td>Không công khai</td><td>10.000 - 18.000đ/căn</td><td>≈15tr/dự án/năm (ưu đãi)</td><td>Không công khai</td></tr>
+      <tr><td>Quy mô công bố</td><td class="lt">Mục tiêu 5 - 50 tòa / 3 năm</td><td>~200 dự án, 70% TP.HCM</td><td>~1.000 dự án (tự công bố)</td><td>Trụ sở Thanh Xuân, Hà Nội</td><td>50 - 500 dự án (mâu thuẫn)</td><td>+300 tòa nhà</td></tr>
+      <tr><td>AI xử lý yêu cầu</td><td class="lt"><span class="y">{{i:check-circle:fill}}</span>Phân loại và gợi ý (người quyết)</td><td><span class="n">{{i:x-circle:fill}}</span>Chat và ticket thủ công</td><td><span class="n">{{i:x-circle:fill}}</span>Chưa có</td><td><span class="n">{{i:x-circle:fill}}</span>Chưa có</td><td>Chỉ AI camera bãi xe</td><td><span class="n">{{i:x-circle:fill}}</span>Chưa có</td></tr>
+      <tr><td>Minh bạch thu chi</td><td class="lt"><span class="y">{{i:check-circle:fill}}</span>Chi tiết từng khoản, chống sửa đổi</td><td>Báo cáo tổng hợp</td><td>Báo cáo tổng hợp</td><td>Minh bạch giá; chưa có sổ chi tiết</td><td>Không chống sửa hóa đơn</td><td>Không phải trọng tâm</td></tr>
+      <tr><td>Biển số xe / Face ID</td><td class="lt"><span class="y">{{i:check-circle:fill}}</span>Tích hợp trong app</td><td>Qua bên thứ ba</td><td>Qua bên thứ ba</td><td>Qua bên thứ ba</td><td><span class="y">{{i:check-circle:fill}}</span>AI camera bãi xe</td><td>Tùy tích hợp</td></tr>
+      <tr><td>Điểm yếu chính</td><td class="lt">Sản phẩm mới; giá ở mức trung bình so với mặt bằng</td><td>Hiện diện Hà Nội mỏng</td><td>Số liệu khó kiểm chứng</td><td>Thiếu lớp AI và sổ chi tiết</td><td>Độ tin cậy số liệu thấp</td><td>Nặng quản trị, nhẹ cư dân</td></tr>
+    </tbody>
+  </table>
+  <div class="calls">
+    <div class="call card-accent"><div class="label accent">Khoảng trống lớn nhất</div><p>AI phân loại và xử lý yêu cầu cư dân: chưa đối thủ nào triển khai thực chất, vẫn chat thủ công và ticket.</p></div>
+    <div class="call card"><div class="label">Tính năng "phải có"</div><p>ANPR và Face ID đã phổ biến qua API/phần cứng, không còn là khác biệt.</p></div>
+    <div class="call card"><div class="label">Mặt bằng giá</div><p>Cơ bản ~10k, tiêu chuẩn ~20k, nâng cao ~40k đ/căn/tháng.</p></div>
+  </div>
+</div>
+<div class="source">Nguồn: website và công bố của các nhà cung cấp; tổng hợp báo cáo thị trường Làm Tổ.</div>

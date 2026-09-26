@@ -1,0 +1,72 @@
+<!-- {"title":"Công nghệ cốt lõi","section":2,"cls":"s-tech","notes":"Hai điểm bán hàng độc nhất. Trước khi duyệt chi, AI đối chiếu giá sửa chữa với các công việc tương tự đã làm và cảnh báo báo giá vượt khung. Sau khi công bố, mỗi khoản chi được niêm phong bằng blockchain riêng Hyperledger Besu, giữ bản sao ở 4 nơi độc lập; ai sửa số cũ, hệ thống báo lỗi ngay."} -->
+<style>
+.s-tech .body { display:flex; flex-direction:column; }
+.s-tech .usps { flex:1; display:grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.s-tech .usp { padding: 24px 30px; display:flex; flex-direction:column; gap: 12px; }
+.s-tech .usp .meta { display:flex; align-items:center; gap: 14px; }
+.s-tech .usp .meta .label { color: var(--orange); }
+.s-tech .usp .meta .when { font-size: 14px; color: var(--muted); }
+.s-tech .usp .h2 { font-size: 26px; }
+.s-tech .usp p { font-size: 18px; line-height:1.55; }
+.s-tech .viz { margin-top: auto; padding: 16px 20px; border-radius: var(--r-md); background: rgba(4,12,32,.55); border: 1px solid var(--line); }
+.s-tech .range-top { display:flex; justify-content:space-between; font-size: 14px; color: var(--muted); margin-bottom: 12px; }
+.s-tech .range-top b { color: var(--orange); }
+.s-tech .track { position:relative; height: 12px; border-radius: 6px; background: rgba(255,255,255,.08); }
+.s-tech .band { position:absolute; top:0; bottom:0; left: 36%; width: 32%; border-radius: 6px; background: rgba(111,143,214,.55); }
+.s-tech .mark { position:absolute; top: -6px; width: 24px; height: 24px; border-radius: 50%; left: calc(92% - 12px); background: var(--orange); border: 4px solid #0b1a3a; }
+.s-tech .ticks { position:relative; height: 20px; margin-top: 8px; font-size: 13px; color: var(--faint); }
+.s-tech .ticks span { position:absolute; transform: translateX(-50%); }
+.s-tech .hashes { display:flex; align-items:center; gap: 10px; }
+.s-tech .hash { font-size: 15px; font-weight: 700; color:#fff; padding: 9px 14px; border-radius: var(--r-sm); background: rgba(255,255,255,.06); border: 1px solid var(--line-strong); letter-spacing: .04em; }
+.s-tech .hashes .ar { color: var(--muted); display:flex; }
+.s-tech .hashes .ar svg { width: 18px; height: 18px; }
+.s-tech .alert { margin-left: auto; display:flex; align-items:center; gap: 8px; font-size: 14px; font-weight: 800; letter-spacing:.08em; text-transform: uppercase; color:#fff; background: var(--orange); padding: 9px 14px; border-radius: var(--r-sm); }
+.s-tech .alert svg { width: 18px; height: 18px; }
+.s-tech .hash-note { margin-top: 12px; font-size: 14px; color: var(--muted); }
+.s-tech .flow { margin-top: 18px; display:grid; grid-template-columns: 170px 1fr 26px 1fr 26px 1fr 26px 1fr 26px 1fr 26px 1fr; align-items:center; }
+.s-tech .flow .fl { font-size: 13px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color: var(--muted); line-height:1.35; }
+.s-tech .flow .st { padding: 13px 12px; border-radius: var(--r-md); background: var(--surface); border:1px solid var(--line); font-size: 15px; font-weight:700; color:#fff; text-align:center; }
+.s-tech .flow .st.last { background: var(--orange); border-color: var(--orange); }
+.s-tech .flow .ar { color: var(--orange); display:flex; justify-content:center; }
+.s-tech .flow .ar svg { width: 16px; height: 16px; }
+.s-tech .base { margin-top: 18px; display:grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line-strong); padding-top: 18px; }
+.s-tech .b { display:flex; gap: 16px; padding-right: 26px; }
+.s-tech .b + .b { padding-left: 26px; border-left: 1px solid var(--line); }
+.s-tech .b .ico { width: 44px; height: 44px; border-radius: 10px; }
+.s-tech .b .ico svg { width: 24px; height: 24px; }
+.s-tech .b .h3 { font-size: 18px; margin-bottom: 4px; }
+.s-tech .b p { font-size: 15.5px; line-height:1.45; }
+</style>
+<div class="head">
+  <h1 class="h1">Công nghệ cốt lõi</h1>
+  <p class="lead">Hai lớp bảo vệ quỹ chung: <b>AI kiểm giá trước khi duyệt chi</b>, <b>blockchain niêm phong sau khi công bố</b>.</p>
+</div>
+<div class="body">
+  <div class="usps">
+    <div class="usp card-strong">
+      <div class="meta"><span class="ico">{{i:magnifying-glass}}</span><div><div class="label">Unique Selling Point 01</div><div class="when">Trước khi duyệt chi</div></div></div>
+      <h2 class="h2">AI đối chiếu giá sửa chữa</h2>
+      <p>AI tự đưa ra khoảng giá hợp lý từ các công việc tương tự đã làm. Báo giá nào cao hơn khoảng giá đó sẽ <b>bị cảnh báo ngay</b> để ban quản lý xem xét lại.</p>
+      <div class="viz">
+        <div class="range-top"><span>Khung giá hợp lý <b style="color:#bcd0f7">18 - 34tr</b></span><span><b>Báo giá 46tr vượt khung</b></span></div>
+        <div class="track" data-bleed><div class="band"></div><div class="mark"></div></div>
+        <div class="ticks"><span style="left:0%;transform:none">0</span><span style="left:36%">18tr</span><span style="left:68%">34tr</span><span style="left:92%">46tr</span></div>
+      </div>
+    </div>
+    <div class="usp card-strong">
+      <div class="meta"><span class="ico">{{i:cube}}</span><div><div class="label">Unique Selling Point 02</div><div class="when">Sau khi công bố</div></div></div>
+      <h2 class="h2">Blockchain chống sửa đổi dữ liệu</h2>
+      <p>Mỗi khoản chi đã công bố được niêm phong và <b>giữ bản sao ở 4 nơi độc lập</b>. Ai sửa lại số cũ, hệ thống báo lỗi ngay; không ai xóa được dấu vết.</p>
+      <div class="viz">
+        <div class="hashes"><span class="hash">9f2a…c1</span><span class="ar">{{i:link-simple-horizontal:bold}}</span><span class="hash">4b70…e8</span><span class="ar">{{i:link-simple-horizontal-break:bold}}</span><span class="alert">{{i:warning:bold}}Sửa lén: báo lỗi</span></div>
+        <div class="hash-note">Mã băm của bản ghi đã neo không khớp với dữ liệu bị sửa.</div>
+      </div>
+    </div>
+  </div>
+  <div class="flow"><div class="fl">Luồng minh bạch</div><div class="st">Phản ánh</div><div class="ar">{{i:caret-right:bold}}</div><div class="st">Xử lý</div><div class="ar">{{i:caret-right:bold}}</div><div class="st">Hồ sơ bảo trì</div><div class="ar">{{i:caret-right:bold}}</div><div class="st">Đề xuất chi</div><div class="ar">{{i:caret-right:bold}}</div><div class="st">Thanh toán</div><div class="ar">{{i:caret-right:bold}}</div><div class="st last">Sổ quỹ công khai</div></div>
+  <div class="base">
+    <div class="b"><span class="ico">{{i:robot}}</span><div><h3 class="h3">AI có bước tự kiểm tra</h3><p>Loại kết quả sai; <b>AI chỉ gợi ý, con người quyết định</b>. Ảnh và thông tin cá nhân cư dân không gửi cho AI.</p></div></div>
+    <div class="b"><span class="ico">{{i:hash}}</span><div><h3 class="h3">Hyperledger Besu (QBFT)</h3><p>Blockchain riêng <b>chỉ lưu mã băm</b>, phù hợp Luật 91/2025; tiêu thụ năng lượng rất thấp.</p></div></div>
+    <div class="b"><span class="ico">{{i:key}}</span><div><h3 class="h3">Khóa xác nhận chia 3 bên</h3><p>Làm Tổ, Ban quản trị, Ban quản lý cùng xác nhận. Sai sót sửa bằng <b>bút toán điều chỉnh công khai</b>; Làm Tổ không giữ tiền cư dân.</p></div></div>
+  </div>
+</div>
